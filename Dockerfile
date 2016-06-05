@@ -30,6 +30,7 @@ RUN npm install -g gulp grunt-cli bower
 # Clone Habitica repo and install dependencies
 WORKDIR /habitrpg
 RUN git clone https://github.com/HabitRPG/habitrpg.git /habitrpg
+RUN npm install; exit 0
 RUN npm install
 RUN bower install --allow-root
 
